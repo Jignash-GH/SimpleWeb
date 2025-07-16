@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4a86e8;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            display: block;
+            margin: 20px auto;
+            transition: transform 0.3s ease;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #4a86e8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+        }
+        button:hover {
+            background: #3a76d8;
+        }
+        img:hover{
+            transform: scale(1.03);
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Web Development</h1>
+        </header>
+        
+        <div class="content">
+            <h2>About HTML</h2>
+            <p>HTML is the standard markup language for creating web pages.</p>
+            
+            <img src="https://i.pinimg.com/originals/ba/0e/b8/ba0eb82dbe74fb21925083c2ea7475b4.jpg" alt="Web Development">
+            
+            <h2>Useful Resources</h2>
+            <p>Learn more at: 
+                <a href="https://www.w3schools.com/html/" target="_blank">W3Schools</a>
+            </p>
+            
+            <button onclick="showAlert()">Click Me!</button>
+        </div>
+    </div>
+
+    <script>
+        function showAlert() {
+            alert("Hurray!");
+        }
+    </script>
+</body>
+</html>
